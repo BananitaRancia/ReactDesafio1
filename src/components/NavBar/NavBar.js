@@ -1,15 +1,17 @@
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css'
+import steam_verde from '../../assets/steam_verde.png'
 
 const NavBar = () => {
     return (
         <div className='navbar-container'>
-        
-        <h1 className='titulo-nav'>Tienda Steam</h1> 
-        
-        <div class="logo_header">
+         
+        <div>
+            <img className='logo_header' src = {steam_verde}/>
         </div>
+        
+        <h1 className='titulo-nav'>Steam Verde</h1> 
         
         <ul className='menu-items'>
             <li>
