@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    display: flex;
+    padding: 0px;
+   
+}
+
+.caja-juegos{
+    height: 200px;;
+    display: flex;
+    margin: 50px;
+    
+    background-color: #2196F3;
+    padding: 20px;
+  
+    
+
+  
+   
+}
+
+.productos{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    /* justify-content: center; */
+    text-align: center;
+
+}
+
+.imagen-juegos {
+    height: 100px;
+    width: 200px;
+    display: flex;
+}

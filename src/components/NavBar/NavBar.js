@@ -1,5 +1,6 @@
-import React from 'react'
+//import React from 'react'
 import CartWidget from '../CartWidget/CartWidget'
+import { Link, NavLink } from 'react-router-dom'
 import './NavBar.css'
 import steam_verde from '../../assets/steam_verde.png'
 
@@ -14,19 +15,21 @@ const NavBar = () => {
         <h1 className='titulo-nav'>Steam Verde</h1> 
         
         <ul className='menu-items'>
-            <li>
-                <a href='' className='menu-list'>Juegos</a>
+            <li className='nav-items'>
+                <NavLink to="/">Inicio</NavLink>
             </li>
-            <li>
-                <a href='' className='menu-list'>Buscar</a>
+            <li className='nav-items'>
+                <NavLink to="/category/tienda">Tienda</NavLink>
             </li>
-            <li>
-                <a href='' className='menu-list'>Mis Favoritos</a>
+            <li className='nav-items'>
+                <NavLink to="/category/soporte">Soporte</NavLink>
             </li>
         </ul>
 
-        <CartWidget></CartWidget>
         
+        <div>
+            <Link to="/cart"><CartWidget></CartWidget></Link>
+            </div>
         </div>
     )
 }
