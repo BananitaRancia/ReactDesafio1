@@ -5,22 +5,15 @@
 
 .principal{
     display: flex;
-    padding: 0px;
-   
+
 }
 
 .caja-juegos{
     height: 200px;;
     display: flex;
     margin: 50px;
-    
-    background-color: #2196F3;
     padding: 20px;
-  
-    
-
-  
-   
+     
 }
 
 .productos{
