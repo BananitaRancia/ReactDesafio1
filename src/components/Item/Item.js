@@ -3,8 +3,7 @@ import './Item.css'
 
 const Item = ({producto}) => {
   return (
-  <div className='principal'> 
-    
+       
     <div className='caja-juegos'>
         
       <div className="productos">
@@ -16,7 +15,7 @@ const Item = ({producto}) => {
       </div>
   
     </div>
-  </div> 
+   
   )
 };
 

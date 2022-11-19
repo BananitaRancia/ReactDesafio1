@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
   const [productList, setProductList] = useState([]);
-  const parametros = useParams ();
+  const {parametros} = useParams ();
 
   const getProducts = new Promise ((res, rej)=> {
     setTimeout(()=>{
@@ -23,7 +23,7 @@ const ItemListContainer = () => {
   },[productList]);
 
 
-  return <div> 
+  return <div className='principal'> 
     <ItemList productList={productList}></ItemList> 
   </div>
 };
