@@ -28,30 +28,6 @@ const ItemListContainer = () => {
   </div>
 };
 
-// const ItemListContainer = () => {
-//   const [items, setItems] = useState ([]);
-//   const { categoryName} = useParams();
 
-//   const getProducts = new Promise ((res, rej) => {
-//     setTimeout (() => {
-//       if (categoryName) {
-//         const filteredData = data.filter((item) => {
-//           return item.category === categoryName;
-//         });
-//         res(filteredData);
-//       } else {
-//       res(data);
-//     }
-//     }, 1200);
-//   })
-//   useEffect (() => {
-//     getProducts.then((res) => setItems(res));
-//   }, [categoryName])
-//   return (
-//      <div>
-//        <ItemList products={items}></ItemList>
-//      </div>
-//   )
-// }
 
 export default ItemListContainer
